@@ -85,11 +85,9 @@ void qsort(int* input, int count)
     }
     else 
     {   
-        //printf("Unsorted Array\n");
-        //printArray(input, count);
+        
         sort(input, 0, count - 1);
-        //printf("Sorted array in ascending order: \n");
-       // printArray(input, count);
+        
     }
 
 }

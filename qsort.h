@@ -5,5 +5,5 @@ void qsort(int*, int);
 void swap(int*, int*);
 int partition(int*, int, int);
 void printArray(int[], int);
-void sortTestLinear(int*, int*, int, char);
-void result(int);
+bool sortTestLinear(int*, int*, int);
+void result(char);

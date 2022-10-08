@@ -2,7 +2,7 @@
 
 /* Function tests a given unsorted array, if it sorts linearly (i.e. in ascending order). */
 // Pass, because array sorted in ascending order.
-void sortTestLinear(int* unsortArr, int *sortArr, int count, char cases)
+bool sortTestLinear(int* unsortArr, int *sortArr, int count)
 {
 	
 	qsort(unsortArr, count);
@@ -12,18 +12,21 @@ void sortTestLinear(int* unsortArr, int *sortArr, int count, char cases)
 		if (unsortArr[i] != sortArr[i])
 		{
 			printf("quickSort not sorting correctly.");
+			return false;
 			break;
-		}
+	 	}
 	}
 
-	result(cases);
+	return true;
+	
+	//result(cases);
 	//printf("**Case:1 Assending sort**  passed");
 		
 }
 
-void result(int spaces)
+void result(char cases)
 {
-	switch (spaces)
+	switch (cases)
 	{
 	case 'a':
 

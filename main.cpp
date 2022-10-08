@@ -29,10 +29,26 @@ int main() {
 	int arr3[2] = { -1, 2 };
 	int arrSorted3[2] = { -1, 2 };
 
-	sortTestLinear(arr, arrSorted, 5, 'a');
-	sortTestLinear(arr1, arrSorted1, 2, 'b');
-	sortTestLinear(arr2, arrSorted2, 5, 'c');
-	sortTestLinear(arr3, arrSorted3, 5, 'd');
+	if (sortTestLinear(arr, arrSorted, 5))
+	{
+		result('a');
+
+	}
+	if(sortTestLinear(arr1, arrSorted1, 2));
+	{
+		result('b');
+	}
+	if (sortTestLinear(arr2, arrSorted2, 5))
+	{
+
+		result('c');
+	}
+
+	if (sortTestLinear(arr3, arrSorted3, 5))
+	{
+
+		result('d');
+	}
 
 	//Case4: In C we cannot intialize an empty array but this program
 	// will hault if an empty erray [cout 0] has been dected.
